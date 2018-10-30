@@ -1,0 +1,60 @@
+######################
+#### DEPENDENCIES ####
+######################
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:bootstrap_package/Configuration/TypoScript/constants.typoscript">
+
+
+############
+### PAGE ###
+############
+page {
+    logo {
+        file = EXT:serendipitypic/Resources/Public/Images/LOGO.PNG
+        fileInverted = EXT:serendipitypic/Resources/Public/Images/LOGO_white.png
+        height = 45
+        width = 200
+        alt = serendipitypic
+        linktitle = serendipitypic
+    }
+    favicon {
+        file = EXT:serendipitypic/Resources/Public/Icons/favicon.ico
+    }
+    fluidtemplate {
+        layoutRootPath = EXT:serendipitypic/Resources/Private/Layouts/Page/
+        partialRootPath = EXT:serendipitypic/Resources/Private/Partials/Page/
+        templateRootPath = EXT:serendipitypic/Resources/Private/Templates/Page/
+    }
+}
+
+
+##################
+### EXTENSIONS ###
+##################
+plugin.bootstrap_package {
+    view {
+        layoutRootPath = EXT:serendipitypic/Resources/Private/Layouts/
+        partialRootPath = EXT:serendipitypic/Resources/Private/Partials/
+        templateRootPath = EXT:serendipitypic/Resources/Private/Templates/
+    }
+}
+
+
+########################
+### CONTENT ELEMENTS ###
+########################
+plugin.bootstrap_package_contentelements {
+    view {
+        layoutRootPath = EXT:serendipitypic/Resources/Private/Layouts/ContentElements/
+        partialRootPath = EXT:serendipitypic/Resources/Private/Partials/ContentElements/
+        templateRootPath = EXT:serendipitypic/Resources/Private/Templates/ContentElements/
+    }
+}
+
+
+#######################################
+### REMOVE BOOTSTRAP LESS CONSTANTS ###
+#######################################
+plugin.bootstrap_package.settings.less >
+plugin.bootstrap_package.settings.overrideLessVariables >
+
+plugin.bootstrap_package.settings.less.brand-primary = #54657B

@@ -1,0 +1,43 @@
+######################
+#### DEPENDENCIES ####
+######################
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:bootstrap_package/Configuration/TypoScript/setup.typoscript">
+
+
+##############
+#### PAGE ####
+##############
+page {
+    includeCSSLibs {
+        googlewebfont = https://fonts.googleapis.com/css?family=Cormorant+Garamond:300,300i,400,400i,500,500i,600,600i,700,700i
+        sans = https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i
+    }
+
+    includeCSS {
+        theme = EXT:serendipitypic/Resources/Public/Less/theme.less
+        serendipitypic_theme = EXT:serendipitypic/Resources/Public/Css/serendipitypic.css
+    }
+
+    includeJSLibs {
+
+    }
+
+    includeJS {
+
+    }
+
+    includeJSFooterlibs {
+
+    }
+
+    includeJSFooter {
+        serendipitypic_scripts = EXT:serendipitypic/Resources/Public/JavaScript/Dist/scripts.js
+    }
+}
+
+
+
+#### FORM CONFIGURATION ###
+plugin.tx_form.settings.yamlConfigurations.100 = EXT:serendipitypic/Configuration/Form/myFormSetup.yaml
+module.tx_form.settings.yamlConfigurations.100 = EXT:serendipitypic/Configuration/Form/myFormSetup.yaml
+

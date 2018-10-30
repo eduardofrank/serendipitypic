@@ -1,0 +1,7 @@
+#
+# PageTS for serendipitypic
+#
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:serendipitypic/Configuration/PageTS/RTE.txt">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:serendipitypic/Configuration/PageTS/TCEFORM.txt">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:serendipitypic/Configuration/PageTS/TCEMAIN.txt">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:serendipitypic/Configuration/PageTS/Mod/WebLayout/BackendLayouts.txt">

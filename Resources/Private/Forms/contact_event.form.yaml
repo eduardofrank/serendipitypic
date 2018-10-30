@@ -1,0 +1,326 @@
+
+renderingOptions:
+  submitButtonLabel: Enviar
+type: Form
+identifier: contact_event
+label: contact_event
+prototypeName: standard
+finishers:
+  -
+    options:
+      subject: 'Mensaje enviado desde la página web'
+      recipientAddress: info@serendipitypic.com
+      recipientName: serendipitypic
+      senderAddress: '{text-5}'
+      senderName: '{text-1} {text-2}'
+      replyToAddress: '{text-5}'
+      carbonCopyAddress: ''
+      blindCarbonCopyAddress: ''
+      format: html
+      attachUploads: true
+      translation:
+        language: ''
+    identifier: EmailToReceiver
+  -
+    options:
+      pageUid: '6'
+      additionalParameters: ''
+    identifier: Redirect
+renderables:
+  -
+    renderingOptions:
+      previousButtonLabel: 'Previous step'
+      nextButtonLabel: 'Next step'
+    type: Page
+    identifier: page-1
+    label: 'Escríbenos por aquí…'
+    renderables:
+      -
+        type: GridRow
+        identifier: gridrow-1
+        label: 'Grid: Row'
+        renderables:
+          -
+            properties:
+              text: ''
+            type: StaticText
+            identifier: statictext-1
+            label: 'Tu nombre'
+          -
+            defaultValue: ''
+            type: Text
+            identifier: text-1
+            label: Nombre
+            properties:
+              fluidAdditionalAttributes:
+                required: required
+              gridColumnClassAutoConfiguration:
+                viewPorts:
+                  lg:
+                    numbersOfColumnsToUse: '6'
+                  md:
+                    numbersOfColumnsToUse: '6'
+                  sm:
+                    numbersOfColumnsToUse: '12'
+                  xs:
+                    numbersOfColumnsToUse: '12'
+            validators:
+              -
+                identifier: NotEmpty
+          -
+            defaultValue: ''
+            type: Text
+            identifier: text-2
+            label: Apellido
+            properties:
+              fluidAdditionalAttributes:
+                required: required
+              gridColumnClassAutoConfiguration:
+                viewPorts:
+                  lg:
+                    numbersOfColumnsToUse: '6'
+                  md:
+                    numbersOfColumnsToUse: '6'
+                  sm:
+                    numbersOfColumnsToUse: '12'
+                  xs:
+                    numbersOfColumnsToUse: '12'
+            validators:
+              -
+                identifier: NotEmpty
+      -
+        type: GridRow
+        identifier: gridrow-3
+        label: 'Grid: Row'
+        renderables:
+          -
+            defaultValue: ''
+            type: Text
+            identifier: text-5
+            label: email
+            properties:
+              fluidAdditionalAttributes:
+                required: required
+              gridColumnClassAutoConfiguration:
+                viewPorts:
+                  lg:
+                    numbersOfColumnsToUse: '6'
+                  md:
+                    numbersOfColumnsToUse: '6'
+                  sm:
+                    numbersOfColumnsToUse: '12'
+                  xs:
+                    numbersOfColumnsToUse: '12'
+            validators:
+              -
+                identifier: NotEmpty
+              -
+                identifier: EmailAddress
+          -
+            defaultValue: ''
+            type: Text
+            identifier: text-6
+            label: Teléfono
+            properties:
+              gridColumnClassAutoConfiguration:
+                viewPorts:
+                  lg:
+                    numbersOfColumnsToUse: '6'
+                  md:
+                    numbersOfColumnsToUse: '6'
+                  sm:
+                    numbersOfColumnsToUse: '12'
+                  xs:
+                    numbersOfColumnsToUse: '12'
+      -
+        type: GridRow
+        identifier: gridrow-2
+        label: 'Grid: Row'
+        renderables:
+          -
+            properties:
+              text: ''
+            type: StaticText
+            identifier: statictext-2
+            label: 'Tu futura pareja'
+          -
+            defaultValue: ''
+            type: Text
+            identifier: text-3
+            label: Nombre
+            properties:
+              fluidAdditionalAttributes:
+                required: required
+              gridColumnClassAutoConfiguration:
+                viewPorts:
+                  lg:
+                    numbersOfColumnsToUse: '6'
+                  md:
+                    numbersOfColumnsToUse: '6'
+                  sm:
+                    numbersOfColumnsToUse: '12'
+                  xs:
+                    numbersOfColumnsToUse: '12'
+              elementDescription: ''
+            validators:
+              -
+                identifier: NotEmpty
+          -
+            defaultValue: ''
+            type: Text
+            identifier: text-4
+            label: Apellido
+            properties:
+              fluidAdditionalAttributes:
+                required: required
+              elementDescription: ''
+              gridColumnClassAutoConfiguration:
+                viewPorts:
+                  lg:
+                    numbersOfColumnsToUse: '6'
+                  md:
+                    numbersOfColumnsToUse: '6'
+                  sm:
+                    numbersOfColumnsToUse: '12'
+                  xs:
+                    numbersOfColumnsToUse: '12'
+            validators:
+              -
+                identifier: NotEmpty
+      -
+        type: GridRow
+        identifier: gridrow-4
+        label: 'Grid: Row'
+        renderables:
+          -
+            properties:
+              text: ''
+            type: StaticText
+            identifier: statictext-3
+            label: 'Acerca de la boda'
+          -
+            properties:
+              dateFormat: m-d-Y
+              enableDatePicker: false
+              displayTimeSelector: false
+              gridColumnClassAutoConfiguration:
+                viewPorts:
+                  lg:
+                    numbersOfColumnsToUse: '3'
+                  md:
+                    numbersOfColumnsToUse: '3'
+                  sm:
+                    numbersOfColumnsToUse: '12'
+                  xs:
+                    numbersOfColumnsToUse: '12'
+              fluidAdditionalAttributes:
+                required: required
+            type: DatePicker
+            identifier: datepicker-1
+            label: 'Fecha (dd-mm-YYYY)'
+            validators:
+              -
+                identifier: NotEmpty
+              -
+                identifier: DateTime
+          -
+            defaultValue: ''
+            type: Text
+            identifier: text-7
+            label: 'Lugar de la ceremonia'
+            properties:
+              fluidAdditionalAttributes:
+                required: required
+              gridColumnClassAutoConfiguration:
+                viewPorts:
+                  lg:
+                    numbersOfColumnsToUse: '3'
+                  md:
+                    numbersOfColumnsToUse: '3'
+                  sm:
+                    numbersOfColumnsToUse: '12'
+                  xs:
+                    numbersOfColumnsToUse: '12'
+            validators:
+              -
+                identifier: NotEmpty
+          -
+            defaultValue: ''
+            type: Text
+            identifier: text-8
+            label: 'Lugar de la recepción'
+            properties:
+              fluidAdditionalAttributes:
+                required: required
+              gridColumnClassAutoConfiguration:
+                viewPorts:
+                  lg:
+                    numbersOfColumnsToUse: '3'
+                  md:
+                    numbersOfColumnsToUse: '3'
+                  sm:
+                    numbersOfColumnsToUse: '12'
+                  xs:
+                    numbersOfColumnsToUse: '12'
+            validators:
+              -
+                identifier: NotEmpty
+          -
+            defaultValue: ''
+            type: Text
+            identifier: text-9
+            label: Ciudad
+            properties:
+              fluidAdditionalAttributes:
+                required: required
+              gridColumnClassAutoConfiguration:
+                viewPorts:
+                  lg:
+                    numbersOfColumnsToUse: '3'
+                  md:
+                    numbersOfColumnsToUse: '3'
+                  sm:
+                    numbersOfColumnsToUse: '12'
+                  xs:
+                    numbersOfColumnsToUse: '12'
+            validators:
+              -
+                identifier: NotEmpty
+          -
+            defaultValue: ''
+            type: Textarea
+            identifier: textarea-1
+            label: 'Cuéntanos acerca de tu boda…'
+            properties:
+              gridColumnClassAutoConfiguration:
+                viewPorts:
+                  lg:
+                    numbersOfColumnsToUse: '6'
+                  md:
+                    numbersOfColumnsToUse: '6'
+                  sm:
+                    numbersOfColumnsToUse: '12'
+                  xs:
+                    numbersOfColumnsToUse: '12'
+          -
+            defaultValue: ''
+            type: Textarea
+            identifier: textarea-2
+            label: '¿Cómo supiste de nosotros?'
+            properties:
+              gridColumnClassAutoConfiguration:
+                viewPorts:
+                  lg:
+                    numbersOfColumnsToUse: '6'
+                  md:
+                    numbersOfColumnsToUse: '6'
+                  sm:
+                    numbersOfColumnsToUse: '12'
+                  xs:
+                    numbersOfColumnsToUse: '12'
+      -
+        properties:
+          text: '* Campo requerido'
+        type: StaticText
+        identifier: statictext-4
+        label: ''

@@ -1,0 +1,183 @@
+html {
+    font-family: 'Cormorant Garamond', serif;
+}
+
+body {
+    font-family: 'Cormorant Garamond', serif;
+}
+
+/***** Hack para evitar problema de flex en safari *****/
+/*div.gallery-row > :first-child {
+  margin-left:-2px;
+}*/
+
+
+.navbar + a + .carousel-fullscreen,
+.navbar + a + a + .carousel-fullscreen,
+.navbar + .typo3-feedit-element > a + .carousel-fullscreen,
+.navbar + .typo3-feedit-element > a + a + .carousel-fullscreen,
+.navbar + .main-section > a + .carousel-fullscreen,
+.navbar + .main-section > a + a + .carousel-fullscreen,
+.navbar + .main-section > .typo3-feedit-element > a + .carousel-fullscreen,
+.navbar + .main-section > .typo3-feedit-element > a + a + .carousel-fullscreen,
+.navbar + a + .carousel-fullscreen .carousel-item,
+.navbar + a + a + .carousel-fullscreen .carousel-item,
+.navbar + .typo3-feedit-element > a + .carousel-fullscreen .carousel-item,
+.navbar + .typo3-feedit-element > a + a + .carousel-fullscreen .carousel-item,
+.navbar + .main-section > a + .carousel-fullscreen .carousel-item,
+.navbar + .main-section > a + a + .carousel-fullscreen .carousel-item,
+.navbar + .main-section > .typo3-feedit-element > a + .carousel-fullscreen .carousel-item,
+.navbar + .main-section > .typo3-feedit-element > a + a + .carousel-fullscreen .carousel-item {
+    height: 100vh;
+}
+
+/*************************/
+/****** NAVIGATION *******/
+/*************************/
+
+.navbar {
+    font-family: Montserrat, sans-serif;
+    letter-spacing:3px;
+    font-weight:500;
+}
+
+@media (min-width: 992px) {
+.navbar-brand-image > img {
+    position: relative;
+    top: 50%;
+    transform: translate(0, -50%);
+    max-height: 32%;
+    width: auto;
+}
+}
+
+#p1 .navbar {
+  position: absolute;
+  margin:0;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1000;
+  background-color: rgba(231, 240, 242, 0.3);
+  opacity:1;
+  border:none;
+}
+
+#p1 .navbar-brand-logo-normal {
+  display: block;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background: url(/typo3conf/ext/serendipitypic/Resources/Public/Images/LOGO_white.png) no-repeat;
+  width: 250px;
+  height: 60px;
+  padding-left: 250px;
+}
+
+/****** END OF NAVIGATION ******/
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight:500;
+}
+
+.image {
+    display: block;
+    height: auto:
+    max-width:100%;
+    margin: 0 auto;
+}
+
+#p1 li a {
+    color:#fff;
+}
+
+#p1 .icon-bar {
+    background-color:#fff;
+}
+
+#c1 {
+    padding-top:0;
+}
+
+p {
+    font-size:1.5em;
+    text-align: justify;
+}
+
+#p5 .frame,
+#p5 .section.section-default {
+    padding-top:0;
+}
+
+@media (min-width: 575.9px) {
+  #c3 p {
+  column-count: 2;
+}
+}
+
+.gallery-item {
+    position: relative;
+    float: none;
+    padding: 0.5em 0.5em 0.5em 0.5em;
+}
+
+/**********************/
+/**       FORM       **/
+/**********************/
+
+form h2 {
+    font-weight:400;
+}
+
+form p:last-child {
+    font-size:1em;
+    text-align:right;
+    padding-top:0.5rem;
+}
+
+/**   END OF FORM   **/
+
+
+/*************************/
+/******** LIGHTBOX *******/
+/*************************/
+
+button.pswp__button.pswp__button--fs,
+button.pswp__button.pswp__button--close,
+button.pswp__button.pswp__button--share {
+    display:none;
+}
+
+/****** END OF LIGHTBOX ******/
+
+/***************************/
+/********** FOOTER *********/
+/***************************/
+
+.footer-section-meta {
+  margin:0;
+  padding:0;
+  height:1em;
+}
+
+.footer-section {
+  margin:0;
+  padding:0;
+  height:2em;
+}
+
+.footer-section-content {
+    height:3em;
+}
+
+.copyright p {
+  margin:0;
+  padding:0;
+  font-size:.5em;
+}
+
+.frame-small {
+    padding-top: 0.1em;
+    padding-bottom: 0.1em;
+}
+
+/****** END OF FOOTER ******/
