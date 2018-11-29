@@ -1,16 +1,10 @@
-html {
-    font-family: 'Cormorant Garamond', serif;
+html {    
+    font-family: Montserrat, sans-serif;
 }
 
 body {
-    font-family: 'Cormorant Garamond', serif;
+    font-family: Montserrat, sans-serif;
 }
-
-/***** Hack para evitar problema de flex en safari *****/
-/*div.gallery-row > :first-child {
-  margin-left:-2px;
-}*/
-
 
 .navbar + a + .carousel-fullscreen,
 .navbar + a + a + .carousel-fullscreen,
@@ -29,6 +23,60 @@ body {
 .navbar + .main-section > .typo3-feedit-element > a + .carousel-fullscreen .carousel-item,
 .navbar + .main-section > .typo3-feedit-element > a + a + .carousel-fullscreen .carousel-item {
     height: 100vh;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight:400;
+}
+
+h2 {
+    font-size:1.5rem;    
+}
+
+.card-group-element-item .card-title {
+    font-size: 1rem;
+}
+
+.image {
+    display: block;
+    height: auto:
+    max-width:100%;
+    margin: 0 auto;
+}
+
+#p1 li a {
+    color:#fff;
+}
+
+#p1 .icon-bar {
+    background-color:#fff;
+}
+
+#c1 {
+    padding-top:0;
+}
+
+p {
+    font-size:.95em;
+    font-weight:300;
+    text-align: justify;
+}
+
+#p5 .frame,
+#p5 .section.section-default {
+    padding-top:0;
+}
+
+/*@media (min-width: 575.9px) {
+  #c3 p {
+  column-count: 2;
+}
+}*/
+
+.gallery-item {
+    position: relative;
+    float: none;
+    padding: 0.5em 0.5em 0.5em 0.5em;
 }
 
 /*************************/
@@ -75,63 +123,29 @@ body {
 
 /****** END OF NAVIGATION ******/
 
-h1, h2, h3, h4, h5, h6 {
-    font-weight:500;
-}
-
-.image {
-    display: block;
-    height: auto:
-    max-width:100%;
-    margin: 0 auto;
-}
-
-#p1 li a {
-    color:#fff;
-}
-
-#p1 .icon-bar {
-    background-color:#fff;
-}
-
-#c1 {
-    padding-top:0;
-}
-
-p {
-    font-size:1.5em;
-    text-align: justify;
-}
-
-#p5 .frame,
-#p5 .section.section-default {
-    padding-top:0;
-}
-
-@media (min-width: 575.9px) {
-  #c3 p {
-  column-count: 2;
-}
-}
-
-.gallery-item {
-    position: relative;
-    float: none;
-    padding: 0.5em 0.5em 0.5em 0.5em;
-}
 
 /**********************/
 /**       FORM       **/
 /**********************/
 
+#p5 form {
+    margin-top:2em;
+}
+
 form h2 {
-    font-weight:400;
+    font-size:1.2rem;
+    margin-bottom:-1rem;
 }
 
 form p:last-child {
     font-size:1em;
     text-align:right;
     padding-top:0.5rem;
+}
+
+label {
+    font-weight:500;
+    font-size:.9rem;
 }
 
 /**   END OF FORM   **/
@@ -141,11 +155,21 @@ form p:last-child {
 /******** LIGHTBOX *******/
 /*************************/
 
-button.pswp__button.pswp__button--fs,
-button.pswp__button.pswp__button--close,
+
 button.pswp__button.pswp__button--share {
     display:none;
 }
+
+.pswp__ui--fit .pswp__top-bar,
+.pswp__ui--fit .pswp__caption {
+ background-color:#000;
+}
+
+.pswp__top-bar, .pswp__caption {
+  background-color: #000;
+  opacity:1;
+}
+
 
 /****** END OF LIGHTBOX ******/
 
