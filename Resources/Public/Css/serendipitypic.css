@@ -1,9 +1,12 @@
 html {    
     font-family: Montserrat, sans-serif;
 }
-
 body {
     font-family: Montserrat, sans-serif;
+}
+
+a{
+    text-decoration:none;
 }
 
 .navbar + a + .carousel-fullscreen,
@@ -61,17 +64,6 @@ p {
     font-weight:300;
     text-align: justify;
 }
-
-#p5 .frame,
-#p5 .section.section-default {
-    padding-top:0;
-}
-
-/*@media (min-width: 575.9px) {
-  #c3 p {
-  column-count: 2;
-}
-}*/
 
 .gallery-item {
     position: relative;
@@ -177,31 +169,20 @@ button.pswp__button.pswp__button--share {
 /********** FOOTER *********/
 /***************************/
 
-.footer-section-meta {
-  margin:0;
-  padding:0;
-  height:1em;
+.footer-section-meta a,
+.footer-section-meta a:visited {
+    color:#ffffff;
 }
 
-.footer-section {
-  margin:0;
-  padding:0;
-  height:2em;
+footer .frame {
+    padding-top: 1em;
+    padding-bottom: 1em;
 }
 
-.footer-section-content {
-    height:3em;
-}
-
-.copyright p {
-  margin:0;
-  padding:0;
-  font-size:.5em;
-}
-
-.frame-small {
-    padding-top: 0.1em;
-    padding-bottom: 0.1em;
+.footer-section-meta .frame {
+    padding-top:0;
+    padding-bottom: 1em;
+    background: #333;
 }
 
 /****** END OF FOOTER ******/

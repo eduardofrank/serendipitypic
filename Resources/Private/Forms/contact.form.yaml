@@ -93,16 +93,16 @@ renderables:
               validationErrorMessages:
                 -
                   code: '1221560910'
-                  message: 'Debe ser un correo electrónico válido'
+                  message: 'Debe ser un correo electrónico válido / Valid email address required.'
                 -
                   code: '1221560718'
-                  message: 'Debe ser un correo electrónico válido'
+                  message: 'Debe ser un correo electrónico válido / Valid email address required.'
                 -
                   code: '1347992400'
-                  message: 'Debe ser un correo electrónico válido'
+                  message: 'Debe ser un correo electrónico válido / Valid email address required.'
                 -
                   code: '1347992453'
-                  message: 'Debe ser un correo electrónico válido'
+                  message: 'Debe ser un correo electrónico válido / Valid email address required.'
               gridColumnClassAutoConfiguration:
                 viewPorts:
                   lg:
@@ -181,7 +181,7 @@ renderables:
             defaultValue: ''
             type: Textarea
             identifier: textarea-1
-            label: 'Si quieres, cuéntanos algo más:'
+            label: 'Si quieres, cuéntanos algo más…'
             properties:
               gridColumnClassAutoConfiguration:
                 viewPorts:

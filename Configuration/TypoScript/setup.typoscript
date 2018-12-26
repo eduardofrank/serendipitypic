@@ -38,10 +38,12 @@ page {
 config {
         contentObjectExceptionHandler = 0
 }
+config.contentObjectExceptionHandler = 0
 
 #### FORM CONFIGURATION ###
 plugin.tx_form.settings.yamlConfigurations.100 = EXT:serendipitypic/Configuration/Form/myFormSetup.yaml
 module.tx_form.settings.yamlConfigurations.100 = EXT:serendipitypic/Configuration/Form/myFormSetup.yaml
+plugin.tx_form.settings.yamlConfigurations.200 = EXT:serendipitypic/Configuration/Form/CustomFormSetup.yaml
 
 plugin.tx_bootstrap_package {
     _LOCAL_LANG {
