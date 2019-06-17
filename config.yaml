@@ -1,0 +1,32 @@
+rootPageId: 1
+base: 'https://www.serendipitypic.com/'
+baseVariants: {  }
+languages:
+  -
+    title: Español
+    enabled: true
+    languageId: '0'
+    base: /
+    typo3Language: es
+    locale: es_ES.UTF-8
+    iso-639-1: es
+    navigationTitle: Español
+    hreflang: es-ES
+    direction: ''
+    flag: es
+  -
+    title: English
+    enabled: true
+    languageId: '1'
+    base: /en/
+    typo3Language: default
+    locale: en_US.UTF-8
+    iso-639-1: en
+    navigationTitle: English
+    hreflang: en
+    direction: ''
+    fallbackType: strict
+    fallbacks: '0'
+    flag: us
+errorHandling: {  }
+routes: {  }

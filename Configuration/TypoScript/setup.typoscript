@@ -37,8 +37,8 @@ page {
 
 config {
         contentObjectExceptionHandler = 0
+        admPanel = 0
 }
-config.contentObjectExceptionHandler = 0
 
 #### FORM CONFIGURATION ###
 plugin.tx_form.settings.yamlConfigurations.100 = EXT:serendipitypic/Configuration/Form/myFormSetup.yaml

@@ -162,16 +162,19 @@ button.pswp__button.pswp__button--share {
   opacity:1;
 }
 
-
 /****** END OF LIGHTBOX ******/
 
 /***************************/
 /********** FOOTER *********/
 /***************************/
 
+.footer-section-meta,
 .footer-section-meta a,
-.footer-section-meta a:visited {
-    color:#ffffff;
+.footer-section-meta a:visited,
+.footer-section-meta a:hover,
+.footer-section-meta a:focus {
+    color:#ffffff!important;
+    text-decoration:none!important;
 }
 
 footer .frame {
@@ -183,6 +186,10 @@ footer .frame {
     padding-top:0;
     padding-bottom: 1em;
     background: #333;
+}
+
+.sociallinks-link-icon {
+    color:#ffffff;
 }
 
 /****** END OF FOOTER ******/
