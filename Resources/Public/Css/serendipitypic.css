@@ -5,6 +5,16 @@ body {
     font-family: Montserrat, sans-serif;
 }
 
+body, .body-bg {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.main-section {
+  flex:1;
+}
+
 a{
     text-decoration:none;
 }
@@ -114,6 +124,29 @@ p {
 }
 
 /****** END OF NAVIGATION ******/
+
+/**********************/
+/** BREADCRUMB MENU  **/
+/**********************/
+
+#p6 .breadcrumb {
+    display:none;
+}
+
+.breadcrumb-section {
+    background-color: transparent;
+}
+
+.breadcrumb {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0.75rem 1rem;
+    margin-bottom: 1rem;
+    list-style: none;
+    background-color: transparent;
+}
+
+/** END OF BREADCRUMB MENU  **/
 
 
 /**********************/

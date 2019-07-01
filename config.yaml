@@ -29,4 +29,20 @@ languages:
     fallbacks: '0'
     flag: us
 errorHandling: {  }
-routes: {  }
+routes:
+  -
+    route: robots.txt
+    type: staticText
+    content: "User-agent:*\r\nDisallow:/contacto/gracias-por-tu-mensaje\r\nDisallow:/typo3/"
+  -
+    route: sitemap.xml
+    type: uri
+    source: 'https://www.serendipitypic.com/?type=1533906435'
+  -
+    route: en/sitemap.xml
+    type: uri
+    source: 'https://www.serendipitypic.com/en/?type=1533906435'
+  -
+    route: /en/robots.txt
+    type: staticText
+    content: "User-agent:*\r\nDisallow:/en/contact/thanks-for-your-message\r\nDisallow:/typo3/"
